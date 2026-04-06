@@ -137,13 +137,13 @@ Stores extra info for thrift items.
 ---
 
 ### 2. Orders → OrderedItems (1:N)
-- One order can have multiple products  
+- One order can have multiple orderedItems  
 - `orders.id < orderedItems.order_id`
 
 ---
 
 ### 3. Products → OrderedItems (1:N)
-- One product can be part of many orders  
+- One product can be part of many orderedItems  
 - `products.id < orderedItems.product_id`
 
 👉 This creates a **many-to-many relationship** between Orders and Products.
